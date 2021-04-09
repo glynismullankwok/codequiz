@@ -1,16 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
+  <title>Code Quiz</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   
-  <title>quiz</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="script.js" type="text/javascript"></script>
 </head>
 <body>
-  <h1 class="time"></h1>
-  <div id="main"></div>
-
-  <script src="quiz.js"></script>
+  <div id="nav">
+    <!-- nar bar to view scores and see timer-->
+    <div class="left">
+      <a onclick="getScore()" href="#">
+        <h4>View Highscore</h4>
+      </a>
+    </div>
+    <div class="right">
+      <h4>Time: <span id="timeLeft">0</span></h4>
+    </div>
+  </div>
+  <!--main body of quiz-->
+  <div id="quiz">
+    <div id="quizBody">
+      <h1>
+        Code Quiz!
+      </h1>
+      <h3>
+        Click to start quiz. Good Luck!
+      </h3>
+      <button onclick="start()">Start!</button>
+    </div>
+  </div>
 </body>
 </html>
